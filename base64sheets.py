@@ -83,7 +83,7 @@ def sheetpost_get(sheet_id, filename):
         print ("Logged into Sheets! Downloading the base64 code. This might take some time.")
     except Exception:
         exit("Error logging into Google Sheets.\n Check your authentication and make sure you have  a "
-             "sheetpost to work with.")
+             "sheet to work with.")
 
     row_sweep = 1
     column_sweep = 1
@@ -116,9 +116,9 @@ def sheetpost_get(sheet_id, filename):
 # The help message that displays if none or too
 # few arguments are given to properly execute.
 help_message = '''To upload a sheetpost:
-\t sheetpost.py put [GSheets key from URL] [Input filename]"
-To retrieve a sheetpost:
-\t sheetpost.py get [GSheets key from URL] [Output filename]"'''
+\t base64sheets.py put [GSheets key from URL] [Input filename]"
+To retrieve a base64sheets:
+\t base64sheets.py get [GSheets key from URL] [Output filename]"'''
 
 
 # MAIN PART
